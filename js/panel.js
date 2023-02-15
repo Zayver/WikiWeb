@@ -1,6 +1,12 @@
+function fillSubtitlesId(subtitles){
+    Array.from(subtitles).forEach(sub =>{
+        sub.setAttribute("id", sub.innerHTML.toLowerCase().replaceAll(" ", "_"))
+    })
+}
 function initPanel(){
     let panel = document.getElementById("table-panel")
     let titles = document.getElementsByClassName("content-subtitle")
+    fillSubtitlesId(titles)
 
     Array.from(titles).forEach( title =>{
         let li = document.createElement("li")
@@ -15,4 +21,4 @@ function initPanel(){
 }
 
 
-window.onload = initPanel
+document.addEventListener("DOMContentLoaded", initPanel)
