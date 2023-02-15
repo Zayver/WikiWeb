@@ -5,20 +5,29 @@ body {
     background-color: #333333;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     background-color: #191A19;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    max-height: 10vh;
+    max-height: 35vh;
+    overflow: scroll;
 }
 
-.main-nav{
+header::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-nav {
     height: 100%;
 }
 
-.logo{
+.logo {
     color: white;
     line-height: 90px;
     font-size: 30px;
@@ -27,7 +36,7 @@ header{
     margin-left: 30px;
 }
 
-.navlinks{
+.navlinks {
     list-style: none;
     float: right;
     line-height: 90px;
@@ -35,33 +44,34 @@ header{
     padding: 0;
 }
 
-.navlinks li{
+.navlinks li {
     display: inline-block;
     margin: 0 30px;
 }
 
-.navlinks li a{
+.navlinks li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
     transition: all 0.3s linear 0s;
 }
-.navlinks li a:hover{
+
+.navlinks li a:hover {
     color: #4E9F3D;
     padding-bottom: 7px;
     border-bottom: 2px solid #4E9F3D;
 }
 
 
-.navlinks a.active{
+.navlinks a.active {
     background-color: #4E9F3D;
     padding: 9px 20px;
     border-radius: 50px;
     transition: all 0.3s linear 0s;
 }
 
-.navlinks a.active:hover{
+.navlinks a.active:hover {
     background-color: #14361b;
     color: white;
     border-bottom: none;
