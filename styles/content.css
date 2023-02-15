@@ -74,3 +74,6 @@ html {
     font-weight: 500;
     color: #D8E9A8;
 }
+#root p{
+    font-size: 18px;
+}
