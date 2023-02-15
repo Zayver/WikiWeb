@@ -42,9 +42,8 @@ html{
 }
 
 .content{
-    padding:  40px 50px;
     flex: 1;
-    min-height: max-content;
+    padding:  40px 50px;
 }
 .content-title{
     font-size: 50px;

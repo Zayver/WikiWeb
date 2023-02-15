@@ -1,12 +1,8 @@
-footer{
-    bottom: 0;
-    width: 100%;
-    box-shadow: 15px 5px 15px 0 rgba(0, 0, 0, 0.9);
-    background: linear-gradient(45deg, #d0e1a1 0%, #D8E9A8 100%);
-}
 
 #footer-wrapper{
     display: flex;
+    box-shadow: 15px 5px 15px 0 rgba(0, 0, 0, 0.9);
+    background: linear-gradient(45deg, #d0e1a1 0%, #D8E9A8 100%);
     justify-content: center;
     align-items: center;
     text-align: center;

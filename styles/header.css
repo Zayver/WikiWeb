@@ -10,10 +10,12 @@ header{
     top: 0;
     background-color: #191A19;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    max-height: 10vh;
 }
 
 .main-nav{
-    height: 10vh;
+    height: 100%;
 }
 
 .logo{
